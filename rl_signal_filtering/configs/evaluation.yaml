@@ -1,0 +1,14 @@
+signal_length: 2048
+filter_order: 5
+window_size: 10
+stride: 5
+model_path: ppo_model.pt
+noise_types:
+  - gaussian
+  - uniform
+  - laplacian
+  - impulse
+  - pink
+  - brown
+sigmas: [0.1, 0.5, 1.0, 2.0]
+

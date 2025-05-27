@@ -1,0 +1,15 @@
+# train.yaml
+signal_length: 2048    # total number of samples in each training signal
+filter_order: 5        # classical filter order
+window_size: 10        # override 2*filter_order if you like
+stride: 5              # override window_size//2 if you like
+
+num_episodes: 1000     # how many PPO episodes to run
+gamma: 0.99            # discount factor
+update_epochs: 5       # PPO inner update loops
+lr: 3e-4               # learning rate
+clip_eps: 0.2          # PPO clip epsilon
+
+alpha: 0.5             # weight on MSE penalty in reward
+beta: 0.1              # weight on smoothness penalty
+
