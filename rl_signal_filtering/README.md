@@ -15,8 +15,10 @@ A reinforcement-learning–based residual denoiser that augments classical filte
 
 1. **Clone** and **enter** the repo:
    ```bash
-   git clone [<your-repo-url>](https://github.com/bradshard/rl_signal_filtering.git)
-   cd rl_signal_filtering
+    git clone --depth 1 --filter=blob:none --sparse https://github.com/Bradshard/Reinforcement_Learning.git
+    cd Reinforcement_Learning
+    git sparse-checkout set rl_signal_filtering
+    cd rl_signal_filtering
    ```
 
 2. **Create & activate** a virtual environment:
@@ -49,7 +51,7 @@ Or override parameters:
 python -m rl_signal_filtering.train   --signal_length 2048   --filter_order 5   --num_episodes 500   --lr 1e-4   --alpha 0.3   --beta 0.05
 ```
 
-Outputs a model `ppo_residual_<baseline>.pt`.
+Outputs a model `ppo_model.pt`.
 
 ### Evaluation
 
