@@ -15,7 +15,7 @@ A reinforcement-learning–based residual denoiser that augments classical filte
 
 1. **Clone** and **enter** the repo:
    ```bash
-   git clone <your-repo-url>
+   git clone [<your-repo-url>](https://github.com/bradshard/rl_signal_filtering.git)
    cd rl_signal_filtering
    ```
 
