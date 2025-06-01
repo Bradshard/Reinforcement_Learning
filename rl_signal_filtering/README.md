@@ -62,7 +62,7 @@ python -m rl_signal_filtering.evaluate --config configs/evaluate.yaml
 
 Or override:
 ```bash
-python -m rl_signal_filtering.evaluate   --model_path ppo_residual_lms.pt   --noise_types gaussian uniform laplacian impulse pink brown   --sigmas 0.1 0.5 1.0 2.0
+python -m rl_signal_filtering.evaluate   --model_path ppo_model.pt   --noise_types gaussian uniform laplacian impulse pink brown   --sigmas 0.1 0.5 1.0 2.0
 ```
 
 Prints a table of SNR and inference-time comparisons, and plots:
